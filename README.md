@@ -1,8 +1,9 @@
 # yield
 what is it, how it works:)
 
-please install IDLE 
+install IDLE - very simple editor
 sudo apt-get install idle3
+
 
 create new file yield.py
 
@@ -24,30 +25,45 @@ create new file yield.py
   - an amount produced of an agricultural or industrial product.
    "the milk yield was poor"
 
+## Why ?
+
+- Certain concepts can be described much more  `succinctly, briefly, short ` using generators.
+
+- Instead of creating a function which returns a list of values, one
+can write a generator which generates the values on the fly.
+This means that  `no list needs to be constructed `, meaning that the
+resulting code is more memory efficient. In this way one can even
+describe data streams which would simply be too large to fit in memory.
+
+- Generators allow for a natural way to describe  `infinite streams `.
+Consider for example the Fibonacci numbers
 
 
-TASK 1:
-create array of divisors
+
+
+## TASK 1:
+write divisors of optional number
 ```sh
 def divisor(n):
     ...
-def divisorYield(n):
-    ...
-n = 103045624  
-print('my number is : %s' %str(n))    
-start1 = time.time()
-Array = divisor(n)
-time1 = time.time()-start1
-print('divisors by array: %s' %str(time1))
-print(Array)
-print()
+```
 
-start2 = time.time()
-Yield = divisorYield(n)
-time2 = time.time()-start2
-print('divisors by generator: %s' %str(time2))
-print(list(Yield))
-print(Yield)
+## TASK 2:
+count Fibonacci n-th number
+```sh
+def fib(n):
+    ...
+fib(16) == 987
+fib(34) ==
+fib (38) ==
+
+```
+
+## TASK 3:
+create array of divisors
+```sh
+def divisor(n):
+
 ```
 
 
